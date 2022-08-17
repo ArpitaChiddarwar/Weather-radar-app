@@ -153,8 +153,7 @@ function Weather() {
             <div className="des-wind">
               <p>Wind Speed: {cityData.list[0].wind.speed}m/s</p>
             </div>
-            <br />
-            <br />
+
             <div className="card-group">
               {[1, 2, 3, 4, 5].map((id) => (
                 <div className="card">
@@ -175,7 +174,7 @@ function Weather() {
                       {/* <p>{cityData.list[1].weather[0].description.toUpperCase()}</p> */}
                       <p> {cityData.list[id].wind.speed}m/s</p>
                       <p> {cityData.list[id].main.humidity}%</p>
-                      <p> 1 mm</p>
+                      <p> {cityData.list[id].pop}mm</p>
                     </div>
                   </div>
                 </div>
